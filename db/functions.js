@@ -24,7 +24,7 @@ async function seedDataQuestions() {
 }
 
 async function seedDataSubjects() {
-    return await pool.query("INSERT INTO subjects (question_id, subject) (SELECT  question_id, subject FROM json_populate_recordset(NULL::questions, $1::JSON));", [JSON.stringify(subject)])
+    return await pool.query("INSERT INTO subjects (question_id, subject) (SELECT  question_id, subject FROM json_populate_recordset(NULL::subjects, $1::JSON));", [JSON.stringify(subject)])
 }
 
 
