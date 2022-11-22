@@ -39,7 +39,7 @@ async function seedDataSubjects() {
 //     //console.log (createTableQuestions())
 //     //console.log (createTableSubjects())
 //     //console.log(await seedDataQuestions())
-//     console.log(await seedDataSubjects())
+//     //console.log(await seedDataSubjects())
 
 // } catch (err) {
 //     console.log(err)
@@ -48,7 +48,7 @@ async function seedDataSubjects() {
 // }
 
 // export async function dropTable() {
-//     await pool.query("DROP TABLE questions")
+//     await pool.query("DROP TABLE questions, subjects")
 //     try {
 //         console.log(dropTable())
 //     } catch (err) {
