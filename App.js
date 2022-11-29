@@ -2,6 +2,7 @@ import express, { application } from "express";
 import { createTableSubjects, createTableQuestions } from "./db/functions.js";
 import router from "./routes/routes.js";
 
+
 const App = express();
 
 const PORT = process.env.PORT;
