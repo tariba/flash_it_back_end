@@ -16,3 +16,5 @@ console.log(DATABASE_URL);
 App.listen(PORT, () => {
   console.log("I'm Listening");
 });
+
+export default App;
