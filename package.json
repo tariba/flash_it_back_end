@@ -17,7 +17,7 @@
   "type": "module",
   "scripts": {
     "test": "node  -r dotenv/config --experimental-vm-modules node_modules/jest/bin/jest.js",
-    "start": "nodemon -r dotenv/config app.js"
+    "start": "nodemon -r dotenv/config App.js"
   },
   "repository": {
     "type": "git",
