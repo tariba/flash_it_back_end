@@ -18,3 +18,4 @@ export async function getQuestionsById(id) {
     `SELECT * FROM questions INNER JOIN subjects on questions.id = subjects.question_id WHERE questions.id = ${id};`
   );
 }
+
