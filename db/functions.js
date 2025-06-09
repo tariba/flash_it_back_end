@@ -1,6 +1,8 @@
 import { pool } from "./index.js";
 import { questions, subject } from "./data.js";
 
+
+// console.log(pool.query)
 /*
  * a fn that creates question table
  */
@@ -39,18 +41,24 @@ async function seedDataSubjects() {
   );
 }
 
+
 /*
  * a fn that deletes the table
  */
 
-// export async function dropTable() {
-//     await pool.query("DROP TABLE questions, subjects")
-//     try {
-//         console.log(dropTable())
-//     } catch (err) {
-//         console.log(err)
-//     } finally {
-//         await pool.end();
-//     }
-// }
+export async function dropTable() {
+    await pool.query("DROP TABLE questions, subjects")
+    try {
+        console.log(dropTable())
+    } catch (err) {
+        console.log(err)
+    } finally {
+        await pool.end();
+    }
+}
 // await dropTable();
+// createTableQuestions()
+// createTableSubjects()
+
+// seedDataQuestions()
+// seedDataSubjects()
