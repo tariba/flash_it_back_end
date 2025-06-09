@@ -1,8 +1,10 @@
 import express, { application } from "express";
+import dns from 'dns';
 import { createTableSubjects, createTableQuestions } from "./db/functions.js";
 import router from "./routes/routes.js";
 import cors from "cors";
 
+dns.setDefaultResultOrder('ipv4first')
 const App = express();
 
 // Cors middleware
