@@ -6,7 +6,7 @@
 This is the backend server for the Flash It application:  
 [https://flash-it-back-end.onrender.com/questions](https://flash-it-back-end.onrender.com/questions)
 
-> ⚠️ **Note:** Because this API is hosted on Render’s free tier, the first request after inactivity may take up to **50 seconds** to respond while the server “wakes up.”
+⚠️ **Note:** Because this API is hosted on Render’s free tier, the first request after inactivity may take up to **50 seconds** to respond while the server “wakes up.”
 
 ---
 
